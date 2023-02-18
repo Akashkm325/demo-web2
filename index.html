@@ -10,6 +10,29 @@
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
+<style>
+  .underlineHover:after {
+            display: block;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: #0d0d0d;
+            content: "";
+            transition: width 0.4s;
+        }
+
+        .underlineHover:hover {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .underlineHover:hover:after {
+            width: 100%;
+        }
+</style>
+
 <body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->

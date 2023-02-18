@@ -244,6 +244,26 @@ font-weight: 700;
 	font-size: 12px;
 	font-weight: 300
 }
+       /* Simple CSS3 Fade-in Animation */
+	   .underlineHover:after {
+            display: block;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: #0d0d0d;
+            content: "";
+            transition: width 0.4s;
+        }
+
+        .underlineHover:hover {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .underlineHover:hover:after {
+            width: 100%;
+        }
 #userform #login .form-group label .req {
 	margin: 2px;
 	color: #F7CA18;
@@ -260,7 +280,8 @@ font-weight: 700;
 }
 
 .mrgn-30-top {
-	margin-top: 30px
+	margin-top: 30px;
+	background-color: #00000063;
 }
 </style>
 </head>
@@ -322,8 +343,8 @@ font-weight: 700;
               </div>
               
               <div class="mrgn-30-top">
-                <button type="submit" class="btn btn-larger btn-block"/>
-                Sign up
+                <button type="submit" class="btn btn-larger btn-block">
+                <p>Sign Up<a class="underlineHover" href="index.html"></a></p>
                 </button>
               </div>
             </form>
@@ -388,5 +409,18 @@ $('.tab a').on('click', function (e) {
 });
   </script>
 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
 </body>
 </html>
